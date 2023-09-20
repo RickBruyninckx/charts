@@ -33,11 +33,11 @@ service:
         port: 10290
         targetPort: 80
 
-postgresql:
-  enabled: true
-  existingSecret: "dbcreds"
-  postgresqlUsername: openproject
-  postgresqlDatabase: openproject
+cnpg:
+  main:
+    enabled: true
+    user: openproject
+    database: openproject
 
 portal:
   enabled: true
